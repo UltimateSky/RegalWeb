@@ -2,6 +2,18 @@
 <html lang="en">
 
 <head>
+    <link rel="icon" href="./img/favicon/32.png" sizes="32x32">
+    <link rel="icon" href="./img/favicon/57.png" sizes="57x57">
+    <link rel="icon" href="./img/favicon/76.png" sizes="76x76">
+    <link rel="icon" href="./img/favicon/96.png" sizes="96x96">
+    <link rel="icon" href="./img/favicon/128.png" sizes="128x128">
+    <link rel="icon" href="./img/favicon/228.png" sizes="228x228">
+    <!-- Android -->
+    <link rel="shortcut icon" href="./img/favicon/196.png" sizes="196x196">
+    <!-- iOS -->
+    <link rel="apple-touch-icon" href="./img/favicon/-120.png" sizes="120x120">
+    <link rel="apple-touch-icon" href="./img/favicon/152.png" sizes="152x152">
+    <link rel="apple-touch-icon" href="./img/favicon/180.png" sizes="180x180">
     <title>Regal Reserve LLC | Home</title>
 
     <!-- Bootstrap core CSS -->
@@ -19,14 +31,18 @@
                 <div class="menu-icon">
                     <i class="fa fa-bars fa-2x"></i>
                 </div>
-                <div class="logo">
-                    (REGAL LOGO)
+                <div class="logo row" onclick="location.href='./index.html';" style="cursor:pointer;">
+                    <div class="col-sm-6">
+                        <img src="img/Black.png" class="header-icon"> 
+                    </div>
+                    <div class="header-text col-sm-6">ЯR</div>
+                    
                 </div>
                 <div class="menu">
                     <ul>
-                        <li><a href="#">Home</a></li>
+                        <li><a href="#top">Home</a></li>
                         <li><a href="#">About</a></li>
-                        <li><a href="#">Roster</a></li>
+                        <li><a href="./roster.html">Roster</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
@@ -34,7 +50,7 @@
         </header>
 
         <!-- Regal text -->
-        <div class="masthead header-bg">
+        <div class="masthead header-bg" id="top">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12" id="page-intro">
@@ -147,6 +163,44 @@
                 $('nav').removeClass('black');
             }
         });
+        
+        //Smooth scrolling
+
+        // Select all links with hashes
+        $('a[href*="#"]')
+            // Remove links that don't actually link to anything
+            .not('[href="#"]')
+            .not('[href="#0"]')
+            .click(function(event) {
+                // On-page links
+                if (
+                    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+                    location.hostname == this.hostname
+                ) {
+                    // Figure out element to scroll to
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    // Does a scroll target exist?
+                    if (target.length) {
+                        // Only prevent default if animation is actually gonna happen
+                        event.preventDefault();
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000, function() {
+                            // Callback after animation
+                            // Must change focus!
+                            var $target = $(target);
+                            $target.focus();
+                            if ($target.is(":focus")) { // Checking if the target was focused
+                                return false;
+                            } else {
+                                $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                                $target.focus(); // Set focus again
+                            };
+                        });
+                    }
+                }
+            });
 
     </script>
 

@@ -25,6 +25,8 @@ body {
 }
 
 
+
+
 /* Wrapper for page content to push down footer */
 
 #wrap {
@@ -109,6 +111,17 @@ header {
     top: 0;
 }
 
+.header-icon {
+    max-width: 40px;
+    max-height: 40px;
+    margin-top: 0;
+}
+
+.header-text {
+    padding: 0;
+    line-height: 40px;
+}
+
 .logo {
       line-height: 30px;
       position: fixed;
@@ -116,8 +129,12 @@ header {
       margin: 16px 46px;
       color: #000;
       font-weight: bold;
-      font-size: 20px;
+      font-size: 25px;
       letter-spacing: 2px;
+}
+
+a.logo{
+    font-size: 20px;
 }
 
 nav {

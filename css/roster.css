@@ -1,0 +1,162 @@
+/* General Styling specific to rosters */
+
+/* Roster page header 50% height */
+.header-roster {
+    background: url('../img/section1.png') no-repeat center center fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    top: 0;
+}
+
+h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+.roster {
+    margin-bottom: 80px;
+}
+
+a.fab {
+    text-decoration: none;
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+
+/* CSS for team images */
+
+.team {
+    text-align: center;
+    transition: all 0.5s ease 0s;
+}
+
+.team:hover {
+    box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.team .pic {
+    overflow: hidden;
+    position: relative;
+}
+
+.team .pic:before,
+.team .pic:after {
+    content: "";
+    width: 200%;
+    height: 80%;
+    background: rgba(38, 37, 37, 0.8);
+    position: absolute;
+    top: -100%;
+    left: -4%;
+    transform: rotate(45deg);
+    transition: all 0.5s ease 0s;
+}
+
+.team .pic:after {
+    background: rgba(169, 169, 169, 0.8);
+    top: auto;
+    left: auto;
+    bottom: -100%;
+    right: -4%;
+}
+
+.team:hover .pic:before {
+    top: 0;
+}
+
+.team:hover .pic:after {
+    bottom: 0;
+}
+
+.team .pic img {
+    width: 100%;
+    height: auto;
+}
+
+.team .social {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: absolute;
+    bottom: 45%;
+    left: 0;
+    opacity: 0;
+    z-index: 2;
+    transition: all 0.5s ease 0.3s;
+}
+
+.team:hover .social {
+    opacity: 1;
+}
+
+.team .social li {
+    display: inline-block;
+}
+
+.team .social li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    color: #fff;
+    margin-right: 10px;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+
+.team .social li a:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #0066FF;
+    border-radius: 0 20px 20px 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.3s ease 0s;
+}
+
+.team .social li a:hover:after {
+    transform: rotate(180deg);
+}
+
+.team .team-content {
+    padding: 20px;
+}
+
+.team .title {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #047168;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+}
+
+.team .post {
+    display: block;
+    font-size: 17px;
+    font-weight: 600;
+    color: #707070;
+    text-transform: capitalize;
+}
+
+@media only screen and (max-width: 990px) {
+    .team {
+        margin-bottom: 30px;
+    }
+}
+
+License Terms
