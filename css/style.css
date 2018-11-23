@@ -24,6 +24,11 @@ body {
     margin-right: 0px;
 }
 
+.news>img {
+    max-height: 400px;
+    max-width: 400px;
+}
+
 
 
 
@@ -40,16 +45,7 @@ body {
 }
 
 
-/* Set the fixed height of the footer here */
 
-#footer {
-    height: 60px;
-    background-color: #f5f5f5;
-    margin-top: 50px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    position: fixed
-}
 
 
 /* Custom page CSS */
@@ -62,10 +58,6 @@ body {
     margin: 20px 0;
 }
 
-#footer {
-    background-color: #414141;
-     !important
-}
 
 .news img{
     max-width: 200px;
@@ -76,25 +68,10 @@ body {
     padding-top: 10px;
 }
 
-
-/* footer */
-
-#footer a {
-    color: #efefef;
+.ekko-lightbox-loader {
+    z-index: 9001;
 }
 
-h1,
-h2,
-h3,
-h4 {
-    vertical-align: middle;
-    text-transform: uppercase;
-    font-weight: 700;
-}
-
-h1 {
-    font-size: 50px;
-}
 
 
 /* Header */
@@ -104,7 +81,11 @@ header {
 }
 
 .header-bg {
-    background: url('../img/section1.png') no-repeat center center fixed;
+    background: 
+        linear-gradient(
+            rgba(255, 255, 255, 0.6), 
+            rgba(255, 255, 255, 0.6)
+        ), url('../img/bg4.jpg') no-repeat center center fixed;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -240,6 +221,8 @@ nav ul li a:hover {
 
 }
 
+/* Nav Bar Hover Effect */
+
 
 .cl-effect-1 a::before,
 .cl-effect-1 a::after {
@@ -281,7 +264,11 @@ nav ul li a:hover {
 /* Alternating backgrounds */
 
 .bg-1 {
-    background: url('../img/section2.png') no-repeat center center fixed;
+    background: 
+        linear-gradient(
+            rgba(255, 255, 255, 0.6), 
+            rgba(255, 255, 255, 0.6)
+        ), url('../img/bg2.JPG') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -289,7 +276,11 @@ nav ul li a:hover {
 }
 
 .bg-2 {
-    background: url('../img/section3.png') no-repeat center center fixed;
+    background: 
+        linear-gradient(
+            rgba(255, 255, 255, 0.6), 
+            rgba(255, 255, 255, 0.6)
+        ), url('../img/bg3.JPG') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -297,7 +288,11 @@ nav ul li a:hover {
 }
 
 .bg-3 {
-    background: url('../img/section4.png') no-repeat center center fixed;
+    background: 
+        linear-gradient(
+            rgba(255, 255, 255, 0.6), 
+            rgba(255, 255, 255, 0.6)
+        ), url('../img/bg4.png') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -305,7 +300,11 @@ nav ul li a:hover {
 }
 
 .bg-4 {
-    background: url('../img/section5.png') no-repeat center center fixed;
+    background: 
+        linear-gradient(
+            rgba(255, 255, 255, 0.6), 
+            rgba(255, 255, 255, 0.6)
+        ), url('../img/section5.png') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -318,7 +317,8 @@ nav ul li a:hover {
 
 #page-intro h1 {
     text-align: center;
-    color: #fff;
+    color: #000;
+    font-weight: 1000;
     font: normal 60px 'Droid Serif', sans-serif;
     padding-top: 80vh;
 }
@@ -345,9 +345,33 @@ section {
     padding-top: 100px;
 }
 
-
-
 /* Footer */
+
+#footer {
+    height: 60px;
+    background-color: #414141;
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: fixed
+}
+
+#footer a {
+    color: #efefef;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 50px;
+}
 
 .footer-basic-centered {
     background-color: #292c2f;
