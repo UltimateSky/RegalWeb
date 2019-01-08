@@ -43,7 +43,7 @@
                         <li><a href="#top">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="./roster.html">Roster</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
                     </ul>
                 </div>
             </nav>
@@ -64,14 +64,22 @@
 
 
         <!-- Section 1 -->
-        <div class="divider" id="section1"></div>
-        <div class="container">
-            <div class="col-sm-10 col-sm-12">
-                <div class="page-header text-center">
-
-                    <h1>Our Sponsors and Partners</h1>
+        <div class="container sponsor">
+            <div class="row justify-content-around">
+                <div class="col-sm-4">
+                    <h1>Our Partners</h1>
+                    <p>We strive to be the parner of choice for any organization looking for an innovative and forward-thinking team to meet their advertising and brand needs. We try our best to offer an experience that cannot be found anywhere else, tailored to their business needs.</p>
+                    <a href="#" class="btn btn-primary btn-lg" tabindex="-1" role="button">Learn More</a>
                 </div>
-                <p class="text-center">(this section willl have all partner logos)</p>
+
+                <div class="col-sm-4 d-flex flex-column justify-content-between sponsor-img">
+                    <figure class="tint">
+                        <a href="https://www.aukey.com"><img src="img/sponsors/aukey.jpg" class="img-fluid"></a>
+                    </figure>
+                    <figure class="tint">
+                        <a href="https://www.esportsgear.com"><img src="img/sponsors/esports.png" class="img-fluid"></a>
+                    </figure>
+                </div>
             </div>
         </div>
 
@@ -80,7 +88,6 @@
 
         <!-- Section 2 -->
 
-        <div class="divider" id="section2"></div>
         <section class="bg-1"></section>
         <div class="container">
             <div class="col-sm-10 col-sm-12">
@@ -88,25 +95,26 @@
 
                     <h1>News</h1>
                 </div>
-                <p class="lead text-center"> Regal Fall Recruitment Challenge Complete! <br>(Click to Enlarge)</p>
+                <p class="lead text-center">
+                    <!-- Regal Fall Recruitment Challenge Complete! --> <br>(Click to Enlarge)</p>
                 <div class="row">
                     <div class="col-sm-4 news">
-                        <a href="./img/designers.jpg" data-toggle="lightbox" data-title="Regal Designers" data-footer="Name, Name, Name, Name">
-                            <img src="./img/designers.jpg" class="image-fluid">
+                        <a href="./img/bg6.jpg" data-toggle="lightbox" data-title="New Regal Merch Coming Soon" data-footer="Name, Name, Name, Name">
+                            <img src="./img/jersey.jpg" class="image-fluid">
                         </a>
-                        <p class="text-center">Regal Designers</p>
+                        <p class="text-center">New Merch Coming Soon</p>
                     </div>
                     <div class="col-sm-4 news">
-                        <a href="./img/editor.jpg" data-toggle="lightbox" data-title="Regal Editors" data-footer="Name, Name, Name, Name">
-                            <img src="./img/editor.jpg" class="image-fluid">
+                        <a href="./img/image2.png" data-toggle="lightbox" data-title="Item 2 Title" data-footer="Name, Name, Name, Name">
+                            <img src="./img/image2.png" class="image-fluid">
                         </a>
-                        <p class="text-center">Regal Editor</p>
+                        <p class="text-center">Item 2</p>
                     </div>
                     <div class="col-sm-4 news">
-                        <a href="./img/fortnite.jpg" data-toggle="lightbox" data-title="Regal Fortnite" data-footer="Name, Name, Name, Name">
-                            <img src="./img/fortnite.jpg" class="image-fluid">
+                        <a href="./img/image3.png" data-toggle="lightbox" data-title="Item 3 Title" data-footer="Name, Name, Name, Name">
+                            <img src="./img/image3.png" class="image-fluid">
                         </a>
-                        <p class="text-center">Regal Fortnite</p>
+                        <p class="text-center">Item 3</p>
                     </div>
                 </div>
             </div>
@@ -124,10 +132,13 @@
             <div class="col-sm-10 col-sm-12">
                 <div class="page-header text-center">
 
-                    <h1>Header Title</h1>
+                    <h1>Watch Regal Live!</h1>
                 </div>
-                <p class="lead text-center"> Header Sub Title </p>
-                <p class="text-justify">Who? Calvin Klein. Who? The guy with the hat. Where is he? Oh. (He points towards the gym.) He went that away. (Biff runs to the gym.) I think he took your wallet! (He turns to the crowd.) I think he took his wallet. Good evening, I'm Doctor Emmett Brown. I'm standing on the parking lot of Twin Pines Mall. It's Saturday morning, October 26, 1985, 1:18 a.m. and this is temporal experiment number one. (gestures for Einstein to get into the car) C'mon, Einy, hey hey boy, get in there, that a boy, in you go, get down, that's it. Whoa, whoa, okay. Please note that Einstein's clock is in complete synchronization with my control watch. Right check, Doc. Good. Have a good trip Einstein, watch your head. Well, she's not doing a very good job. (They go to kiss but a woman shoves a flyer in their faces.) Save the clock tower, save the clock tower. Mayor Wilson is sponsoring an initiative to replace that clock. Thirty years ago, lightning struck that clock tower and the clock hasn't run since. We at the Hill Valley Preservation Society think it should be preserved exactly the way it is as part of our history and heritage. Here you go, lady. There's a quarter. (drops a quarter into her collection tin.) Thank you, don't forget to take a flyer.</p>
+                <div>
+                    <iframe src="https://player.twitch.tv/?channel=regalreserve&muted=true" height="480" width="848" frameborder="0" scrolling="no" allowfullscreen="true">
+                    </iframe></div>
+
+
             </div>
         </div>
     </div>
@@ -156,7 +167,8 @@
     <script src="./js/jquery-3.3.1.min.js"></script>
     <script src="./js/ekko-lightbox.js"></script>
     <script src="./js/bootstrap.js"></script>
-    
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
     <script>
         window.onload = function() {
             // Image Modal
@@ -275,6 +287,7 @@
                     }
                 }
             });
+
     </script>
 
 

@@ -44,15 +44,19 @@ body {
     padding: 0 0 60px;
 }
 
+#wrap > .container {
+    padding-top: 5px;
+}
 
+#wrap > .container h1{
+    padding: 60px 15px 0;
+}
 
 
 
 /* Custom page CSS */
 
-#wrap > .container {
-    padding: 60px 15px 0;
-}
+
 
 .container .credit {
     margin: 20px 0;
@@ -70,6 +74,54 @@ body {
 
 .ekko-lightbox-loader {
     z-index: 9001;
+}
+
+.sponsor img{
+    width: auto;
+    height: 60px;
+}
+
+.sponsor div{
+    padding-bottom: 5px;
+    margin: 30px;
+}
+
+.sponsor p{
+    text-align: justify;
+}
+
+.sponsor .btn{
+    float: right;
+    padding-bottom: 5px;
+}
+
+.sponsor-img{
+    margin: 30px;
+}
+
+.tint {
+  position: relative;
+  float: left;
+  cursor: pointer;
+}
+
+.tint:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255,255,255, 0.5);
+  -moz-transition: background .3s linear;
+  -webkit-transition: background .3s linear;
+  -o-transition: background .3s linear;
+  transition: background .3s linear;
+}
+
+.tint:hover:before {
+  background: none;
 }
 
 
@@ -304,7 +356,31 @@ nav ul li a:hover {
         linear-gradient(
             rgba(255, 255, 255, 0.6), 
             rgba(255, 255, 255, 0.6)
-        ), url('../img/section5.png') no-repeat center center fixed;
+        ), url('../img/bg1.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.bg-5 {
+    background: 
+        linear-gradient(
+            rgba(255, 255, 255, 0.6), 
+            rgba(255, 255, 255, 0.6)
+        ), url('../img/bg5.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.bg-6 {
+    background: 
+        linear-gradient(
+            rgba(255, 255, 255, 0.6), 
+            rgba(255, 255, 255, 0.6)
+        ), url('../img/bg6.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
